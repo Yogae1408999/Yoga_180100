@@ -20,7 +20,7 @@
     
     
       
-        <title>Sistem Differensial - MkDocs Material Boilerplate</title>
+        <title>Numerical Solution of Ordinary Differential Equations - MkDocs Material Boilerplate</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sistem Differensial
+              Numerical Solution of Ordinary Differential Equations
             
           </span>
         </div>
@@ -240,7 +240,7 @@
   
     <li class="md-nav__item">
       <a href="../aljabar/" class="md-nav__link">
-        Aljabar Linier
+        Nuerical Solution of System Linier Algebraic Solution
       </a>
     </li>
   
@@ -262,12 +262,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Sistem Differensial
+          Numerical Solution of Ordinary Differential Equations
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Sistem Differensial
+        Numerical Solution of Ordinary Differential Equations
       </a>
       
         
@@ -307,6 +307,13 @@
           <li class="md-nav__item">
   <a href="#metode_euler" class="md-nav__link">
     Metode Euler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisis_galat_metode_euler" class="md-nav__link">
+    Analisis Galat Metode Euler
   </a>
   
 </li>
@@ -376,6 +383,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#analisis_galat_metode_euler" class="md-nav__link">
+    Analisis Galat Metode Euler
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -398,7 +412,7 @@
                   </a>
                 
                 
-                  <h1>Sistem Differensial</h1>
+                  <h1>Numerical Solution of Ordinary Differential Equations</h1>
                 
                 <h2 id="persamaan_differensial_biasa_ordinary_differential_equations_ode">Persamaan Differensial Biasa (Ordinary Differential Equations (ODE))<a class="headerlink" href="#persamaan_differensial_biasa_ordinary_differential_equations_ode" title="Permanent link">&para;</a></h2>
 <h4 id="a_persamaan_differensial_biasa">A. Persamaan Differensial Biasa<a class="headerlink" href="#a_persamaan_differensial_biasa" title="Permanent link">&para;</a></h4>
@@ -414,7 +428,7 @@ xy\left( \dfrac{d^{3}y}{dx^{3}}\right) ^{2}+\sin \left( \dfrac{d^{2}y}{dx^{2}}\r
 </p>
 <p>Persamaan Differensial Biasa (Ordinary Differential Equations (ODE)) digunakan untuk mendapatkan formulasi suatu fenomena yang mengalami perubahan terhadap waktu atau tempat</p>
 <ul>
-<li>orde</li>
+<li>Orde</li>
 </ul>
 <p>turunan tertinggi dari fungsi yang terlibat dalam persamaan diferensial.</p>
 <p>orde 2:
@@ -427,7 +441,7 @@ xy\left( \dfrac{d^{3}y}{dx^{3}}\right) ^{2}+\sin \left( \dfrac{d^{2}y}{dx^{2}}\r
   </script>
 </p>
 <ul>
-<li>derajat</li>
+<li>Derajat</li>
 </ul>
 <p>pangkat dari turunan tertinggi fungsi yang terlibat dalam persamaan.</p>
 <p>derajat 2:
@@ -435,7 +449,7 @@ xy\left( \dfrac{d^{3}y}{dx^{3}}\right) ^{2}+\sin \left( \dfrac{d^{2}y}{dx^{2}}\r
   xy\left( \dfrac{d^{3}y}{dx^{3}}\right) ^{2}
   </script>
 </p>
-<p>contoh persamaan berikut adalah persamaan diferensial biasa (PDB):
+<p>Contoh persamaan berikut adalah persamaan diferensial biasa (PDB):
 <script type="math/tex; mode=display">
 i).\dfrac{dy}{dx}=x+y
 </script>
@@ -525,7 +539,7 @@ dan
 <script type="math/tex; mode=display">
 x_{r+1}-x_{r}=h
 </script>
-maka persamaan (P.8.6) dapat ditulis menjadi
+Maka persamaan (P.8.6) dapat ditulis menjadi
 <script type="math/tex; mode=display">
 y\left( x_{r+1}\right) \approx y\left( x_{r}\right) +hf\left( x_{r},y_{r}\right) +\dfrac{h^{2}}{2}y^{''}\left( t\right)(P.8.7)
 </script>
@@ -542,8 +556,16 @@ y_{r+1}=y_{r}+hf_{r}
 </script>
 </p>
 <ul>
-<li>Analisis Galat Metode Euler</li>
+<li>
+<h4 id="analisis_galat_metode_euler">Analisis Galat Metode Euler<a class="headerlink" href="#analisis_galat_metode_euler" title="Permanent link">&para;</a></h4>
+</li>
 </ul>
+<p>Error atau kesalahan terdiri dari dua aspek:</p>
+<ol>
+<li>Truncation or discretization errors (kesalahan pemotongan) yang disebabkan oleh teknik penyelesaian dalam mengestimasikan nilai y.</li>
+<li>Round-off errors yang disebabkan oleh keterbatasan jumlah digit dalam
+     hitungan atau jumlah digit dalam alat hitung (kalkulator, komputer).</li>
+</ol>
 <p>Meskipun metode Euler sederhana, tetapi ia mengandung dua macam galat, yaitu galat pemotongan (truncation error) dan galat longgokan (cumulative error). Galat pemotongan dapat langsung ditentukan dari persamaan (P.8.7), yaitu
   <script type="math/tex; mode=display">
   E_{p}\approx \dfrac{1}{2}h^{2}y^{1}\left( t\right) = O\left( h^{2}\right)(P.8.9)
@@ -556,12 +578,8 @@ y_{r+1}=y_{r}+hf_{r}
   <script type="math/tex; mode=display">
   E_{tot}=y\left( b\right) _{sejati}-y\left( x_{n}\right) _{Euler}
   </script>
-  Persamaan (P.8.10) menyatakan bahwa galat longgokan sebanding dengan h. Ini
-  berarti metode Euler memberikan hampiran solusi yang buruk, sehingga dalam
-  praktek metode ini kurang disukai, namun metode ini membantu untuk memahami gagasan dasar metode penyelesaian PDB dengan orde yang lebih tinggi. Pengurangan h dapat meningkatkan ketelitian hasil, namun pengurangan h tanpa penggunaan bilangan berketelitian ganda tidaklah menguntungkan karena galat numerik meningkat disebabkan oleh galat pembulatan [NAK93].</p>
-<p>Selain galat pemotongan, solusi PDB juga mengandung galat pembulatan, yang
-  mempengaruhi ketelitian nilai y1, y2, …, semakin lama semakin buruk dengan
-  meningkatnya n.</p>
+  Persamaan (P.8.10) menyatakan bahwa galat longgokan sebanding dengan h. Ini berarti metode Euler memberikan hampiran solusi yang buruk, sehingga dalam praktek metode ini kurang disukai, namun metode ini membantu untuk memahami gagasan dasar metode penyelesaian PDB dengan orde yang lebih tinggi. Pengurangan h dapat meningkatkan ketelitian hasil, namun pengurangan h tanpa penggunaan bilangan berketelitian ganda tidaklah menguntungkan karena galat numerik meningkat disebabkan oleh galat pembulatan.</p>
+<p>Selain galat pemotongan, solusi PDB juga mengandung galat pembulatan, yang mempengaruhi ketelitian nilai y1, y2, …, semakin lama semakin buruk dengan meningkatnya n.</p>
 <p>contoh :</p>
 <p>Diketahui PDB
   <script type="math/tex; mode=display">
@@ -612,13 +630,22 @@ y_{r+1}=y_{r}+hf_{r}
  x_{5}=0.10\rightarrow y_{0}=1.1081
  </script>
  Jadi, y (0,10) ≈ 1.1081</p>
-<p>Bandingkan dengan solusi sejatinya, y (0.10) = 1.1103</p>
-<p>sehingga galatnya adalah</p>
+<p>Bandingkan dengan solusi sejatinya, y (0.10) = 1.1103, sehingga galatnya adalah</p>
 <p>galat = 1.1103 - 1.1081 = 1.1081 )</p>
-<p>Contoh diatas memperlihatkan bahwa kita dapat mengurangi galat dengan
- memperbanyak langkah (memperkecil h).</p>
+<p>Contoh diatas memperlihatkan bahwa kita dapat mengurangi galat dengan memperbanyak langkah (memperkecil h).</p>
 </li>
 </ol>
+<p>Error pada Metode Euler dapat dihitung dengan memanfaatkan Deret Taylor.</p>
+<p>Keterbatasan:</p>
+<ul>
+<li>Deret Taylor hanya memberikan perkiraan/estimasi local truncation error, yaitu error yang timbul pada satu langkah hitungan Metode Euler, bukan propagated truncation error.</li>
+<li>Hanya mudah dipakai apabila ODE berupa fungsi polinomial sederhana yang mudah untuk di-diferensial-kan, fi(xi,yi) mudah dicari.</li>
+</ul>
+<p>Perbaikan Metode Euler, memperkecil error:</p>
+<ul>
+<li>Pakailah selang h kecil.</li>
+<li>Metode Euler tidak memiliki error apabila ODE berupa fungsi linear.</li>
+</ul>
                 
               
               
@@ -646,7 +673,7 @@ y_{r+1}=y_{r}+hf_{r}
               <span class="md-footer__direction">
                 Previous
               </span>
-              Aljabar Linier
+              Nuerical Solution of System Linier Algebraic Solution
             </div>
           </div>
         </a>

@@ -20,7 +20,7 @@
     
     
       
-        <title>Aljabar Linier - MkDocs Material Boilerplate</title>
+        <title>Nuerical Solution of System Linier Algebraic Solution - MkDocs Material Boilerplate</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aljabar Linier
+              Nuerical Solution of System Linier Algebraic Solution
             
           </span>
         </div>
@@ -247,12 +247,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Aljabar Linier
+          Nuerical Solution of System Linier Algebraic Solution
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Aljabar Linier
+        Nuerical Solution of System Linier Algebraic Solution
       </a>
       
         
@@ -296,6 +296,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#metode_eliminasi_gauss" class="md-nav__link">
+    Metode Eliminasi Gauss
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode_eliminasi_gauss-jordan" class="md-nav__link">
+    Metode Eliminasi Gauss-Jordan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode_iterasi_seidel" class="md-nav__link">
+    Metode Iterasi Seidel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode_iterasi_jacobi" class="md-nav__link">
+    Metode Iterasi Jacobi
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -318,7 +346,7 @@
   
     <li class="md-nav__item">
       <a href="../differensial/" class="md-nav__link">
-        Sistem Differensial
+        Numerical Solution of Ordinary Differential Equations
       </a>
     </li>
   
@@ -376,6 +404,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#metode_eliminasi_gauss" class="md-nav__link">
+    Metode Eliminasi Gauss
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode_eliminasi_gauss-jordan" class="md-nav__link">
+    Metode Eliminasi Gauss-Jordan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode_iterasi_seidel" class="md-nav__link">
+    Metode Iterasi Seidel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode_iterasi_jacobi" class="md-nav__link">
+    Metode Iterasi Jacobi
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -398,7 +454,7 @@
                   </a>
                 
                 
-                  <h1>Aljabar Linier</h1>
+                  <h1>Nuerical Solution of System Linier Algebraic Solution</h1>
                 
                 <h2 id="sistem_persamaan_aljabar_linear">Sistem Persamaan Aljabar Linear<a class="headerlink" href="#sistem_persamaan_aljabar_linear" title="Permanent link">&para;</a></h2>
 <h4 id="a_pengertian_persamaan_linear">A. Pengertian Persamaan Linear<a class="headerlink" href="#a_pengertian_persamaan_linear" title="Permanent link">&para;</a></h4>
@@ -406,14 +462,14 @@
 <script type="math/tex; mode=display">
 a_{1}x_{1}+a_{2}x_{2}+...+a_{n}x_{n}=b
 </script>
-dimana: <em>a</em><em>1</em><em>,</em> <em>a</em><em>2</em><em>,…, a</em><em>n</em><em>,</em> dan <em>b</em> adalah konstanta dan <em>x</em><em>1</em><em>,</em> <em>x</em><em>2</em><em>,…,</em> x<strong>n</strong> adalah variabel yang tidak diketahui.  </p>
+dimana : <em>a1,</em> <em>a2,…, an,</em> dan <em>b</em> adalah konstanta dan <em>x1,</em> <em>x2,…,</em> xn adalah variabel yang tidak diketahui.  </p>
 <h4 id="b_system_persamaan_aljabar_linear">B. System persamaan Aljabar Linear<a class="headerlink" href="#b_system_persamaan_aljabar_linear" title="Permanent link">&para;</a></h4>
-<p>System persamaan linear adalah himpunan beberapa persamaan linear dalam variabel <em>x</em><em>1</em><em>,</em> <em>x</em><em>2</em><em>,…,</em> x<strong>n</strong> <em>.</em></p>
-<p>Barisan bilangan <em>s</em><em>1</em><em>, s</em><em>2</em><em>,…</em> s<strong>n adalah solusi system persamaan linear apabila x</strong>1= s<strong>1</strong> , x<strong>2</strong>= s<strong>2</strong> <em>…</em> x<strong>n =</strong>s<strong>n</strong> memenuhi setiap persamaan linear dalam system.</p>
+<p>System persamaan linear adalah himpunan beberapa persamaan linear dalam variabel <em>x1,</em> <em>x2,…,</em> xn <em>.</em></p>
+<p>Barisan bilangan <em>s1, s2,…</em> sn adalah solusi system persamaan linear apabila x1= s1 , x2= s2 <em>…</em> xn =sn memenuhi setiap persamaan linear dalam system.</p>
 <p>Ada tiga kemungkin tentang solusi SPL yaitu mempunyai hanya 1 set solusi, tidak mempunyai solusi, atau mempunyai banyak solusi:</p>
 <ol>
 <li>
-<p>Suatu system yg mempunyai banyak solusi diantaranya: <em>x</em><em>1</em><em>=1, x</em><em>2</em><em>=2,</em> and <em>x</em><em>3</em><em>=-1</em>
+<p>Suatu system yg mempunyai banyak solusi diantaranya: x1=1, x2=2, and x3=-1
    <script type="math/tex; mode=display">
    \begin{aligned}4x_{1}-x_{2}+3x_{3}=-1\\
    3x_{1}+x_{2}+9x_{3}=-4\end{aligned}
@@ -424,7 +480,7 @@ dimana: <em>a</em><em>1</em><em>,</em> <em>a</em><em>2</em><em>,…, a</em><em>n
 <p>Suatu system yg mempunyai hanya 1 solusi</p>
 </li>
 </ol>
-<p>yaitu: <em>x</em><em>1</em><em>=2,</em> and <em>x</em><em>2</em><em>=1</em>
+<p>yaitu: x1=2, and x2=1
    <script type="math/tex; mode=display">
    \begin{aligned}x_{1}+x_{2}=3\\
    x_{1}-x_{2}=1\end{aligned}
@@ -438,7 +494,7 @@ dimana: <em>a</em><em>1</em><em>,</em> <em>a</em><em>2</em><em>,…, a</em><em>n
    </script>
 </li>
 </ol>
-<p>System persamaan Linear dalam Augmented Matriks
+<p>untuk penyelesaian dari model tersebut dapat menggunakan Sistem Persamaan Linear dalam Augmented Matriks
 <script type="math/tex; mode=display">
 \begin{bmatrix}
 a_{11} & a_{12} & \ldots  & a,n & b, \\
@@ -477,7 +533,7 @@ Metode yang biasa digunakan untuk mencari penyelesaian.</p>
 <p>A. Metode eliminasi:</p>
 <ul>
 <li>gauss</li>
-<li>gasuss jordan</li>
+<li>gauss jordan</li>
 </ul>
 <p>B. Metode Iterasi:</p>
 <ul>
@@ -488,7 +544,7 @@ Metode yang biasa digunakan untuk mencari penyelesaian.</p>
 <p>Jacobi</p>
 </li>
 <li>
-<p>Metode Eliminasi Gauss</p>
+<h4 id="metode_eliminasi_gauss">Metode Eliminasi Gauss<a class="headerlink" href="#metode_eliminasi_gauss" title="Permanent link">&para;</a></h4>
 </li>
 </ul>
 <p>Konsepnya didasarkan pada gagasan mereduksi matriks yang diperbanyak menjadi bentuk yang cukup sederhana sehingga sistem persamaan tersebut bisa diselesaikan dalam bentuk substitusi</p>
@@ -557,8 +613,42 @@ Metode yang biasa digunakan untuk mencari penyelesaian.</p>
       </script>
 </p>
 </li>
+</ol>
+<p>Penggunaan Python untuk perhitungan dengan tambahan modul numphy</p>
+<p><code>import numpy as np</code></p>
+<p>```
+   a = [[2,1,-1, 8], [-3,-1,2,-11], [-2,1,2,-3]]
+   n = len(a[0])-1
+   x = np.zeros(len(a[0]))
+   for i in range(n):
+       if a[i][i] == 0.0:
+           sys.exit('tidak boleh dibagi 0')</p>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">       </span><span class="n">ratio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">i</span><span class="o">]/</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">i</span><span class="o">]</span><span class="w"></span>
+
+<span class="w">       </span><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">           </span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">k</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">k</span><span class="o">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ratio</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">k</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
+
+<p>x[n-1] = a[n-1][n]/a[n-1][n-1]</p>
+<p>for i in range(n-2,-1,-1):
+       x[i] = a[i][n]</p>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">       </span><span class="n">x</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]*</span><span class="n">x</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="w"></span>
+
+<span class="w">   </span><span class="n">x</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">[</span><span class="n">i</span><span class="o">]/</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">i</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
+
+<p>print("hasilnya : ")
+   print(f"x = {x[0]}\ny = {x[1]}\nz = {x[2]}")
+   ```</p>
+<p><code>hasilnya : 
+   x = 2.0
+   y = 3.0
+   z = -1.0</code></p>
+<ol>
 <li>
-<p>Metode Eliminasi Gauss-Jordan</p>
+<h4 id="metode_eliminasi_gauss-jordan">Metode Eliminasi Gauss-Jordan<a class="headerlink" href="#metode_eliminasi_gauss-jordan" title="Permanent link">&para;</a></h4>
 </li>
 </ol>
 <p>Eliminasi Gauss-Jordan adalah pengembangan dari eliminasi Gauss yang hasilnya lebih sederhana lagi. Caranya adalah dengan meneruskan operasi baris dari eliminasi Gauss sehingga menghasilkan matriks yang Eselon-baris. Ini juga dapat digunakan sebagai salah satu metode penyelesaian persamaan linear dengan menggunakan matriks.</p>
@@ -711,8 +801,35 @@ Metode yang biasa digunakan untuk mencari penyelesaian.</p>
        </script>
 </p>
 </li>
+</ol>
+<p>Berikut perhitungan menggunakan python dengan tambahan modul numpy :</p>
+<p>```
+   a = [[2,1,-1, 8], [-3,-1,2,-11], [-2,1,2,-3]]
+   n = len(a[0])-1</p>
+<p>x = np.zeros(len(a[0])-1)</p>
+<p>for i in range(n):
+       if a[i][i] == 0.0:
+           sys.exit('Divide by zero detected!')</p>
+<div class="codehilite"><pre><span></span><code><span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">       </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nl">j</span><span class="p">:</span><span class="w"></span>
+<span class="w">           </span><span class="n">ratio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">i</span><span class="o">]/</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">i</span><span class="o">]</span><span class="w"></span>
+
+<span class="w">           </span><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="k">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="err">:</span><span class="w"></span>
+<span class="w">               </span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">k</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">k</span><span class="o">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ratio</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">k</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
+
+<p>for i in range(n):
+       x[i] = a[i][n]/a[i][i]</p>
+<p>print("hasilnya : ")
+   print(f"x = {x[0]}\ny = {x[1]}\nz = {x[2]}")
+   ```</p>
+<p><code>hasilnya : 
+   x = 2.0
+   y = 3.0
+   z = -1.0</code></p>
+<ol>
 <li>
-<p>Metode Iterasi Seidel</p>
+<h4 id="metode_iterasi_seidel">Metode Iterasi Seidel<a class="headerlink" href="#metode_iterasi_seidel" title="Permanent link">&para;</a></h4>
 </li>
 </ol>
 <p>Metode interasi Gauss-Seidel adalah metode yang menggunakan proses iterasi hingga diperoleh nilai-nilai yang berubah-ubah. Metode iterasi Gauss-Seidel dikembangkan dari gagasan metode iterasi pada solusi persamaan tak linier.</p>
@@ -734,54 +851,117 @@ Metode yang biasa digunakan untuk mencari penyelesaian.</p>
 <ol>
 <li>
 <p>Menuliskan bentuk augmented Matriks</p>
-<p>A =
-  <script type="math/tex; mode=display">
-  \begin{bmatrix}
-  10 & -1 & 2 & 0\\
-  -1 & 11 & -1 & 3\\
-  2 & -1 & 10 & -1\\
-  0 & 3 & -1 & 8
-  \end{bmatrix}
-  </script>
-  B =
-  <script type="math/tex; mode=display">
-  \begin{bmatrix}
-  6\\
-  25\\
-  -11\\
-  15
-  \end{bmatrix}
-  </script>
-</p>
 </li>
 <li>
 <p>Nilai pendekatan awal (0,0,0,0)</p>
 </li>
+</ol>
+<p>contoh penggunaan phyton:</p>
+<p>```
+   #fungsi
+   f1 = lambda x,y,z: (7+1-1)/4
+   f2 = lambda x,y,z: (21+4<em>x+z)/8
+   f3 = lambda x,y,z: (14-2</em>x-y)/5</p>
+<p>x0 = 0
+   y0 = 0
+   z0 = 0
+   count = 1
+   e = float(input('toleransi error: '))
+   condition = True</p>
+<p>while condition:
+       x1 = f1(x0,y0,z0)
+       y1 = f2(x1,y0,z0)
+       z1 = f3(x1,y1,z0)
+       print(f"iterasi-{count} : x = {x1} | y = {y1} | z = {z1} ")
+       e1 = abs(x0-x1);
+       e2 = abs(y0-y1);
+       e3 = abs(z0-z1);</p>
+<div class="codehilite"><pre><span></span><code>   count += 1
+   x0 = x1
+   y0 = y1
+   z0 = z1
+
+  condition = e1&gt;e and e2&gt;e and e3&gt;e
+</code></pre></div>
+
+<p>print("\nhasilnya : ")
+   print(f"x = {x1}\ny = {y1}\nz = {z1}")
+   ```</p>
+<p>```
+   toleransi error:  0.0001
+   iterasi-1 : x = 0.85
+       y = -1.0275
+       z = 1.010875 
+   iterasi-2 : x = 1.0024625
+       y = -0.999825625
+       z = 0.99977990625 
+   iterasi-3 : x = 0.999969271875
+       y = -1.00000639546875
+       z = 1.0000021134921877 
+   iterasi-4 : x = 1.0000005311226563
+       y = -0.9999999739937891
+       z = 0.999999950788666 </p>
+<p>hasilnya : 
+   x = 1.0000005311226563
+   y = -0.9999999739937891
+   z = 0.999999950788666
+   ```</p>
+<ol>
 <li>
-<p>g</p>
-</li>
-<li>
-<p>g</p>
-</li>
-<li></li>
-<li>
-<p>Metode Iterasi Jacobi</p>
+<h4 id="metode_iterasi_jacobi">Metode Iterasi Jacobi<a class="headerlink" href="#metode_iterasi_jacobi" title="Permanent link">&para;</a></h4>
 </li>
 </ol>
 <p>Metode Jacobi merupakan salah satu metode penyelesaian sistem persamaan linear (baca: matriks) berdimensi banyak (baca: lebih dari 2). Untuk matriks dengan dimensi kecil (kurang atau sama dengan dua), lebih efektif diselesaikan dengan aturan eliminasi atau metode Cramer.</p>
 <p>contoh:</p>
-<ol>
-<li>
-<p>g</p>
-</li>
-<li>
-<p>g</p>
-</li>
-<li>
-<p>g</p>
-</li>
-<li></li>
-</ol>
+<p>
+<script type="math/tex; mode=display">
+   4x-y+z=7\\
+   4x-8y+z=-21\\
+   -2x+y+5z=15
+   </script>
+   Jawab :</p>
+<p>```
+   f1 = lambda x,y,z: (7+1-1)/4
+   f2 = lambda x,y,z: (21+4<em>x+z)/8
+   f3 = lambda x,y,z: (14-2</em>x-y)/5</p>
+<p>x0 = 0
+   y0 = 0
+   z0 = 0
+   count = 1</p>
+<p>e = float(input('toleransi error: '))</p>
+<p>condition = True</p>
+<p>while condition:
+       x1 = f1(x0,y0,z0)
+       y1 = f2(x0,y0,z0)
+       z1 = f3(x0,y0,z0)
+       print(f"iterasi-{count} : x = {x1}\n\ty = {y1}\n\tz = {z1} ")
+       e1 = abs(x0-x1);
+       e2 = abs(y0-y1);
+       e3 = abs(z0-z1);</p>
+<div class="codehilite"><pre><span></span><code>   count += 1
+   x0 = x1
+   y0 = y1
+   z0 = z1
+
+   condition = e1&gt;e and e2&gt;e and e3&gt;e
+</code></pre></div>
+
+<p>print("\nhasilnya : ")
+   print(f"x = {x1}\ny = {y1}\nz = {z1}")
+   ```</p>
+<p>```
+   toleransi error: 0.001
+   iterasi-1 : x = 1.75
+       y = 2.625
+       z = 2.8 
+   iterasi-2 : x = 1.75
+       y = 3.85
+       z = 1.575 </p>
+<p>hasilnya : 
+   x = 1.75
+   y = 3.85
+   z = 1.575
+   ```</p>
                 
               
               
@@ -821,7 +1001,7 @@ Metode yang biasa digunakan untuk mencari penyelesaian.</p>
               <span class="md-footer__direction">
                 Next
               </span>
-              Sistem Differensial
+              Numerical Solution of Ordinary Differential Equations
             </div>
           </div>
           <div class="md-footer__button md-icon">
