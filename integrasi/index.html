@@ -261,15 +261,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a_metode_trapesium" class="md-nav__link">
-    A. Metode Trapesium
+  <a href="#metode_trapesium" class="md-nav__link">
+    Metode Trapesium
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b_metode_simpson" class="md-nav__link">
-    B. Metode Simpson
+  <a href="#metode_simpson" class="md-nav__link">
+    Metode Simpson
   </a>
   
 </li>
@@ -289,8 +289,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#c_metode_quadratik_gauss" class="md-nav__link">
-    C. Metode Quadratik Gauss
+  <a href="#metode_quadratik_gauss" class="md-nav__link">
+    Metode Quadratik Gauss
   </a>
   
 </li>
@@ -370,15 +370,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a_metode_trapesium" class="md-nav__link">
-    A. Metode Trapesium
+  <a href="#metode_trapesium" class="md-nav__link">
+    Metode Trapesium
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#b_metode_simpson" class="md-nav__link">
-    B. Metode Simpson
+  <a href="#metode_simpson" class="md-nav__link">
+    Metode Simpson
   </a>
   
 </li>
@@ -398,8 +398,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#c_metode_quadratik_gauss" class="md-nav__link">
-    C. Metode Quadratik Gauss
+  <a href="#metode_quadratik_gauss" class="md-nav__link">
+    Metode Quadratik Gauss
   </a>
   
 </li>
@@ -464,7 +464,7 @@ Hal ini mengingat di dalam bidang sains sering ditemukan ungkapan-ungkapan integ
 <p>Metode Quadratik Gauss</p>
 </li>
 </ol>
-<h4 id="a_metode_trapesium">A. Metode Trapesium<a class="headerlink" href="#a_metode_trapesium" title="Permanent link">&para;</a></h4>
+<h4 id="metode_trapesium">Metode Trapesium<a class="headerlink" href="#metode_trapesium" title="Permanent link">&para;</a></h4>
 <p>Sebagaimana namanya, metode trapezium merupakan metode integrasi numerik
 yang didasarkan pada penjumlahan segmen-segmen berbentuk trapesium.
 <script type="math/tex; mode=display">
@@ -510,41 +510,41 @@ res = spi.trapz(y, x)
 <div class="codehilite"><pre><span></span><code><span class="mf">0.9999997943832332</span>
 </code></pre></div>
 
-<h4 id="b_metode_simpson">B. Metode Simpson<a class="headerlink" href="#b_metode_simpson" title="Permanent link">&para;</a></h4>
+<h4 id="metode_simpson">Metode Simpson<a class="headerlink" href="#metode_simpson" title="Permanent link">&para;</a></h4>
 <p>Di samping menggunakan rumus trapesium dengan interval yang lebih kecil, cara lain untuk mendapatkan perkiraan yang lebih teliti adalah menggunakan polinomial order lebih tinggi untuk menghubungkan titik-titik data. Rumus yang dihasilkan oleh integral di bawah polinomial tersebut dikenal dengan metode (aturan) Simpson.</p>
 <p>Metode simpson dibagi menadi beberapa aturan:</p>
-<ol>
+<ul>
 <li>
 <h4 id="aturan_simpson_13">Aturan Simpson 1/3<a class="headerlink" href="#aturan_simpson_13" title="Permanent link">&para;</a></h4>
 </li>
-</ol>
+</ul>
 <p>Dalam aturan Simpson 1/3 digunakan polinomial order dua (persamaan parabola) yang melalui titik 
-   <script type="math/tex; mode=display">
-   (xi1, f(xi1)), (xi,f(xi)) dan (xi,f(xi+1))
-   </script>
-   untuk mendekati fungsi yang sebenarnya. Rumus Simpson dapat diturunkan berdasarkan deret Taylor, sedemikian sehingga diperoleh luas daerah 𝐴𝑖 adalah:
-   <script type="math/tex; mode=display">
-   A_{i}=\dfrac{\Delta x}{3}( f_{i}-1+4fi+fi+1)
-   </script>
+<script type="math/tex; mode=display">
+(xi1, f(xi1)), (xi,f(xi)) dan (xi,f(xi+1))
+</script>
+untuk mendekati fungsi yang sebenarnya. Rumus Simpson dapat diturunkan berdasarkan deret Taylor, sedemikian sehingga diperoleh luas daerah 𝐴𝑖 adalah:
+<script type="math/tex; mode=display">
+A_{i}=\dfrac{\Delta x}{3}( f_{i}-1+4fi+fi+1)
+</script>
 </p>
 <p>Berdasarkan pembahasan jumlah pias pada metode trapesium, maka pada penggunaan metode Simpson perlu diperhatikan bahwa:</p>
 <ul>
 <li>
 <p>Pada pemakaian satu pias, 
-     <script type="math/tex; mode=display">
-     \Delta x=\dfrac{b-a}{2}
-     </script>
-     sehingga rumus integrasi numerik menggunakan metode Simpson 1/3 dapat ditulis menjadi :
-     <script type="math/tex; mode=display">
-     Ai= \dfrac{b-a}{6}[{f}\left( a\right) +4f( dtf\left( b\right) ]
-     </script>
-     dengan titik c adalah titik tengah antara a dan b.</p>
+  <script type="math/tex; mode=display">
+  \Delta x=\dfrac{b-a}{2}
+  </script>
+  sehingga rumus integrasi numerik menggunakan metode Simpson 1/3 dapat ditulis menjadi :
+  <script type="math/tex; mode=display">
+  Ai= \dfrac{b-a}{6}[{f}\left( a\right) +4f( dtf\left( b\right) ]
+  </script>
+  dengan titik c adalah titik tengah antara a dan b.</p>
 </li>
 <li>
 <p>Pada metode Simpson dengan banyak pias, rumus mencari luas daerah berubah menjadi:
-     <script type="math/tex; mode=display">
-     \int ^{b}_{a}f\left( x\right) dx=\dfrac{\Delta x}{3}[  f(a) +f\left( b\right) +4\sum ^{n-1}_{i-1}f\left( xi\right)  +2\sum ^{n-2}_{i=2}f\left( xi\right) ]
-     </script>
+  <script type="math/tex; mode=display">
+  \int ^{b}_{a}f\left( x\right) dx=\dfrac{\Delta x}{3}[  f(a) +f\left( b\right) +4\sum ^{n-1}_{i-1}f\left( xi\right)  +2\sum ^{n-2}_{i=2}f\left( xi\right) ]
+  </script>
 </p>
 </li>
 <li>
@@ -552,43 +552,56 @@ res = spi.trapz(y, x)
 </li>
 </ul>
 <p>Metode Simpson 3/8 diturunkan dengan menggunakan persamaan polinomial order tiga yang melalui empat titik.
-   <script type="math/tex; mode=display">
-   I=\int ^{b}_{a}f\left( x\right) dx=\int ^{b}_{a}f_{3}\left( x\right) dx
-   </script>
-   Dengan prinsip yang sama seperti pada aturan Simpson 1/3, diperoleh rumus untuk aturan Simpson 3/8 sebagai berikut:
-   <script type="math/tex; mode=display">
-   I = \dfrac{3\Delta x}{8}\left[ f\left( x_{0}\right) +3f\left( x_{1}\right) +\right] f\left( +2\right) +f\left( x_{3}\right) ]
-   </script>
-   dengan:
-   <script type="math/tex; mode=display">
-   \Delta x=\dfrac{b-a}{3}
-   </script>
-   Berikut contoh soal yang akan diselesaikan dengan menggunakan metode simpson :
-   <script type="math/tex; mode=display">
-   \int ^{1}_{0}3x^{2}dx
-   </script>
+<script type="math/tex; mode=display">
+I=\int ^{b}_{a}f\left( x\right) dx=\int ^{b}_{a}f_{3}\left( x\right) dx
+</script>
+Dengan prinsip yang sama seperti pada aturan Simpson 1/3, diperoleh rumus untuk aturan Simpson 3/8 sebagai berikut:
+<script type="math/tex; mode=display">
+I = \dfrac{3\Delta x}{8}\left[ f\left( x_{0}\right) +3f\left( x_{1}\right) +\right] f\left( +2\right) +f\left( x_{3}\right) ]
+</script>
+dengan:
+<script type="math/tex; mode=display">
+\Delta x=\dfrac{b-a}{3}
+</script>
+Berikut contoh soal yang akan diselesaikan dengan menggunakan metode simpson :
+<script type="math/tex; mode=display">
+\int ^{1}_{0}3x^{2}dx
+</script>
 </p>
-<p><code>import numpy as np</code></p>
-<p><code>phyton
-   def simpson(f, a, b, N=50):
-       if N % 2 == 1:
-           print('N harus bilangan genap')
-       dx = (b-a)/N
-       x = np.linspace(a,b,N+1)
-       y = f(x)
-       S = dx/3 * np.sum(y[0:-1:2] + 4*y[1::2] + y[2::2])
-       return S</code></p>
-<p><code>simpson(lambda x : 3*x**2,0,1,10)</code></p>
-<p><code>1.0</code></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="s s-Atom">def</span> <span class="nf">simpson</span><span class="p">(</span><span class="s s-Atom">f</span><span class="p">,</span> <span class="s s-Atom">a</span><span class="p">,</span> <span class="s s-Atom">b</span><span class="p">,</span> <span class="nv">N</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span><span class="s s-Atom">:</span>
+    <span class="s s-Atom">if</span> <span class="nv">N</span> <span class="c1">% 2 == 1:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s s-Atom">&#39;N harus bilangan genap&#39;</span><span class="p">)</span>
+    <span class="s s-Atom">dx</span> <span class="o">=</span> <span class="p">(</span><span class="s s-Atom">b</span><span class="o">-</span><span class="s s-Atom">a</span><span class="p">)</span><span class="o">/</span><span class="nv">N</span>
+    <span class="s s-Atom">x</span> <span class="o">=</span> <span class="s s-Atom">np</span><span class="p">.</span><span class="nf">linspace</span><span class="p">(</span><span class="s s-Atom">a</span><span class="p">,</span><span class="s s-Atom">b</span><span class="p">,</span><span class="nv">N</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="s s-Atom">y</span> <span class="o">=</span> <span class="nf">f</span><span class="p">(</span><span class="s s-Atom">x</span><span class="p">)</span>
+    <span class="nv">S</span> <span class="o">=</span> <span class="s s-Atom">dx</span><span class="o">/</span><span class="mi">3</span> <span class="o">*</span> <span class="s s-Atom">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="s s-Atom">y</span><span class="p">[</span><span class="mi">0</span><span class="p">:-</span><span class="mi">1</span><span class="s s-Atom">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="s s-Atom">y</span><span class="p">[</span><span class="mi">1</span><span class="s s-Atom">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s s-Atom">y</span><span class="p">[</span><span class="mi">2</span><span class="s s-Atom">::</span><span class="mi">2</span><span class="p">])</span>
+    <span class="s s-Atom">return</span> <span class="nv">S</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>simpson(lambda x : 3*x**2,0,1,10)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="mf">1.0</span>
+</code></pre></div>
+
 <p>python juga menyediakan modul untuk penggunaan metode Simpson ini, modul tersebut adalah <em>scipy.integrate.simps</em> yang terdapat pada modul utama <em>scipy</em>, untuk menggunakannya disana membutuhkan 2 parameter dengan bertype <em>list</em>. untuk contoh soal sama dengan diatas.</p>
-<p><code>import scipy.integrate as spi</code></p>
-<p><code>n = 10
-   x = np.linspace(0, 1, n+1)
-   y = 3*x**2
-   res = spi.simps(y, x)
-   print(res)</code></p>
-<p><code>1.0</code></p>
-<h4 id="c_metode_quadratik_gauss">C. Metode Quadratik Gauss<a class="headerlink" href="#c_metode_quadratik_gauss" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">scipy.integrate</span> <span class="k">as</span> <span class="nn">spi</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>n = 10
+x = np.linspace(0, 1, n+1)
+y = 3*x**2
+res = spi.simps(y, x)
+print(res)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="mf">1.0</span>
+</code></pre></div>
+
+<h4 id="metode_quadratik_gauss">Metode Quadratik Gauss<a class="headerlink" href="#metode_quadratik_gauss" title="Permanent link">&para;</a></h4>
 <p>Pada metode trapesium dan Simpson, integral didasarkan pada nilai-nilai di ujung-ujung pias. Sementara, metode quadratur Gauss tidak menggunakan nilai-nilai pada ujung-ujung pias. Metode trapesium didasarkan pada luasan di bawah garis lurus yang menghubungkan nilai-nilai dari fungsi pada ujung-ujung interval integrasi, sehingga memungkinkan terjadinya kesalahan perhitungan yang cukup besar. Gambar berikut mengilustrasikan perbedaan pencarian luas daerah menggunakan metode trapesium dan Quadratur Gauss.</p>
 <p>Dalam metode quadratur Gauss, dilakukan perhitungan luas di bawah garis lurus yang menghubungkan dua titik sembarang pada kurva. Dengan menetapkan posisi dari kedua titik tersebut secara bebas, maka akan bisa ditentukan garis lurus yang dapat menyeimbangkan antara kesalahan positif dan negatif, sebagaimana dapat dilihat pada gambar di atas. Berikut adalah rumus metode quadratur Gauss untuk menghitung luas daerah di bawah
 kurva f(x) dan di atas sumbu x dengan batasan x = -1 sampai x = 1:
